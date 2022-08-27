@@ -7,6 +7,7 @@ function loadPosts(){
 
 function displayPost(postData){
     const postContainer = document.getElementById('post');
+
     
     for(const post of postData){
         const {title, body} = post;
@@ -17,8 +18,14 @@ function displayPost(postData){
         <p class="font-normal text-gray-700 dark:text-gray-400">${body}</p>
         </div>`;
 
+  
+        
         postContainer.appendChild(div);
+
     }
+
+    postContainer.parentNode.parentNode.parentNode.classList.add('bg-slate-900');
+
 }
 
 
