@@ -7,10 +7,10 @@ function loadPhotos(){
 
 function displayPhotos(photos){
     const photosContainer = document.getElementById('photo');
-    console.log(photos)
+    // console.log(photos)
 
-    for(const photo of photos){
-        const {id, title, url, thumbnailUrl} = photo;
+    for(let i = 0; i <=10; i++){
+        const {id, title, url, thumbnailUrl} = photos[i];
         const div = document.createElement('div');
         div.innerHTML = `<figure
         class="relative w-full transition-all duration-300 cursor-pointer">
